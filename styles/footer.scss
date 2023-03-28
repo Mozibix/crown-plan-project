@@ -1,0 +1,59 @@
+.footer {
+  background: $footer_bg;
+  color: $white;
+  font-weight: 400;
+  font-size: 1.1rem;
+
+  &_inner {
+    @media screen and (max-width: 992px) {
+      display: grid;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+  }
+
+  &_left_section {
+    gap: 1rem;
+
+    .privacy_terms {
+      display: none;
+      @media screen and (min-width: 1250px) {
+        display: block;
+      }
+    }
+  }
+
+  &_logo {
+    font-weight: 500;
+    font-style: italic;
+    position: relative;
+    font-size: 2.5rem;
+  }
+
+  .logo_img {
+    position: absolute;
+    top: 0.8rem;
+    left: 3.6rem;
+  }
+
+  &_middle_section {
+    gap: 2rem;
+  }
+
+  &_right_section {
+    margin-bottom: 1rem;
+    @media screen and (min-width: 992px) {
+      margin-bottom: 0;
+    }
+    ul {
+      font-size: 0.7rem;
+      gap: 1rem;
+
+      li {
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+  }
+}

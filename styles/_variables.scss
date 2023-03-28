@@ -1,3 +1,37 @@
+.container_main {
+  padding: 0 1rem;
+
+  @media screen and (min-width: 992px) {
+    padding: 0 5.5rem;
+  }
+}
+
 .special_font {
   font-family: "Cormorant Infant", serif;
 }
+
+.red_text {
+  color: $secondary;
+}
+
+.flex {
+  &_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* MEDIA QUERIES 
+
+
+    @media screen and (min-width: 992px) {
+
+    }
+
+*/
