@@ -10,5 +10,8 @@
   padding: 0;
   font-family: "Mulish", sans-serif;
   box-sizing: border-box;
-  /* font-family: 'Cormorant Infant', serif; */
+}
+
+ul {
+  list-style: none;
 }
