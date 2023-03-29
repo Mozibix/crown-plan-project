@@ -31,23 +31,38 @@
   &_sec {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 1rem;
+    @media screen and (min-width: 992px) {
+      gap: 4rem;
+      padding: 0 8rem;
+    }
   }
   &_text {
     font-family: "Quicksand", sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     font-weight: 500;
-    line-height: 23px;
-    letter-spacing: 0em;
-    text-align: left;
     text-transform: uppercase;
+    line-height: 5px;
+    letter-spacing: 0em;
     color: $light_text;
+    text-align: left;
+
+    @media screen and (min-width: 992px) {
+      font-size: 1.1rem;
+      line-height: 23px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
   }
 }
 
 .line {
-  width: 6.5rem;
-  border: 2px solid $light_text;
+  width: 4rem;
+  border: 1px solid $light_text;
+  @media screen and (min-width: 992px) {
+    width: 6.5rem;
+    border: 2px solid $light_text;
+  }
 }
 
 /* MEDIA QUERIES 
