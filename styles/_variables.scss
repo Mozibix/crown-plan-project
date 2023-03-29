@@ -9,7 +9,6 @@
 .special_font {
   font-family: "Cormorant Infant", serif;
 }
-
 .red_text {
   color: $secondary;
 }
@@ -63,6 +62,10 @@
     width: 6.5rem;
     border: 2px solid $light_text;
   }
+}
+
+.light_text {
+  color: $light_text;
 }
 
 /* MEDIA QUERIES 
