@@ -1,5 +1,6 @@
 import MainLayout from "@/src/layouts/MainLayout";
 import Image from "next/image";
+
 export default function Home() {
   return (
     <MainLayout>
@@ -70,7 +71,96 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* WEDDING PLANNING SECTION */}
+
+        <div className="wedding_planning_sec">
+          <div className="wedding_planning_sec_inner my-10 lg:my-16">
+            <div className="header_sec ml-5">
+              <h3 className="header_text">WEDDING PLANNING</h3>
+              <div className="line"></div>
+            </div>
+
+            <h3 className="text-center special_font text text-3xl lg:text-5xl font-medium italic my-8 lg:my-16">
+              Services
+            </h3>
+
+            <div className="container_main flex lg:grid grid-cols-3 flex-wrap  gap-y-28 justify-center  align-middle service_flexbox">
+              {serviceData.map((serviceInfo, key) => (
+                <div
+                  key={key}
+                  className="service_box grid place-items-center text-center gap-2 justify-center align-middle"
+                >
+                  <div className="service_icon">
+                    <Image
+                      src={serviceInfo.icon}
+                      width={70}
+                      height={70}
+                      alt="icon"
+                    />
+                  </div>
+
+                  <div className="service_box_header special_font font-medium  italic text-2xl capitalize">
+                    {serviceInfo.header}
+                  </div>
+
+                  <div className="service_quotes max-w-xs">
+                    {serviceInfo.quotes}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="wedding_planning_btns flex justify-center gap-4 place-items-center my-16 font-medium container_main">
+              <div className="border-2 border-red-500 text-center text-red-500 hover:text-white hover:bg-red-500 w-80 px-6 py-2">
+                BOOK SERVICE
+              </div>
+              <div className="border-2 border-red-500 text-center text-red-500 hover:text-white hover:bg-red-500 w-80 px-6 py-2">
+                CONTACT US
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </MainLayout>
   );
 }
+
+const serviceData = [
+  {
+    id: 1,
+    icon: "/svgs/checklist.svg",
+    header: "checklist",
+    quotes: "The ultimate wedding checklist to make sure everything gets done.",
+  },
+  {
+    id: 2,
+    icon: "/svgs/checklist.svg",
+    header: "checklist",
+    quotes: "The ultimate wedding checklist to make sure everything gets done.",
+  },
+  {
+    id: 3,
+    icon: "/svgs/checklist.svg",
+    header: "checklist",
+    quotes: "The ultimate wedding checklist to make sure everything gets done.",
+  },
+  {
+    id: 4,
+    icon: "/svgs/checklist.svg",
+    header: "checklist",
+    quotes: "The ultimate wedding checklist to make sure everything gets done.",
+  },
+  {
+    id: 5,
+    icon: "/svgs/checklist.svg",
+    header: "checklist",
+    quotes: "The ultimate wedding checklist to make sure everything gets done.",
+  },
+  {
+    id: 6,
+    icon: "/svgs/checklist.svg",
+    header: "checklist",
+    quotes: "The ultimate wedding checklist to make sure everything gets done.",
+  },
+];
