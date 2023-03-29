@@ -85,7 +85,7 @@ export default function Home() {
               Services
             </h3>
 
-            <div className="container_main flex lg:grid grid-cols-3 flex-wrap  gap-y-28 justify-center  align-middle service_flexbox">
+            <div className="container_main flex lg:grid grid-cols-3 flex-wrap gap-20 lg:gap-y-28 justify-center  align-middle service_flexbox">
               {serviceData.map((serviceInfo, key) => (
                 <div
                   key={key}
@@ -104,7 +104,7 @@ export default function Home() {
                     {serviceInfo.header}
                   </div>
 
-                  <div className="service_quotes max-w-xs">
+                  <div className="service_quotes max-w-xs px-2 lg:px-1">
                     {serviceInfo.quotes}
                   </div>
                 </div>
@@ -112,11 +112,61 @@ export default function Home() {
             </div>
 
             <div className="wedding_planning_btns flex justify-center gap-4 place-items-center my-16 font-medium container_main">
-              <div className="border-2 border-red-500 text-center text-red-500 hover:text-white hover:bg-red-500 w-80 px-6 py-2">
+              <div className="border-2 border-red-500 text-center text-red-500 hover:text-white hover:bg-red-500 w-80 px-6 py-4">
                 BOOK SERVICE
               </div>
-              <div className="border-2 border-red-500 text-center text-red-500 hover:text-white hover:bg-red-500 w-80 px-6 py-2">
+              <div className="border-2 border-red-500 text-center text-red-500 hover:text-white hover:bg-red-500 w-80 px-6 py-4">
                 CONTACT US
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* REAL WEDDINGS */}
+
+        <div className="real_weeding_sec">
+          <div className="real_weeding_sec_inner py-20">
+            <h3 className="text-center special_font text text-3xl lg:text-5xl font-medium italic mt-8 lg:mt-16">
+              Real Weddings{" "}
+            </h3>
+            <h6 className="text-center my-5 light_text font-normal">
+              OUR AMAZING WORK
+            </h6>
+
+            <div className="container_main flex  gap-x-9 flex-wrap place-items-center  gap-8 justify-center  align-middle wedding_flexbox">
+              {weddingsData.map((weddingsInfo, key) => (
+                <div
+                  key={key}
+                  className="wedding_card text-center w-96 h-full grid place-items-center shadow-md"
+                >
+                  <div className="card_image">
+                    <Image
+                      src={weddingsInfo.cardImage}
+                      width={100}
+                      height={100}
+                      alt="weddings"
+                      className="w-96"
+                    />
+                  </div>
+
+                  <div className="card_texts w-full py-10">
+                    <h6 className="name special_font italic font-semibold text-2xl">
+                      {weddingsInfo.name}
+                    </h6>
+                    <p className="location text-base mt-4 font-normal leading-6">
+                      {weddingsInfo.location}
+                    </p>
+                    <p className="date text-base font-normal">
+                      {weddingsInfo.date}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="view_wedding_btn flex justify-center gap-4 place-items-center my-16 font-medium container_main">
+              <div className="border-2 border-red-500 text-center text-white bg-red-500 w-80 px-6 py-4">
+                VIEW WEDDINGS{" "}
               </div>
             </div>
           </div>
@@ -125,6 +175,8 @@ export default function Home() {
     </MainLayout>
   );
 }
+
+/* SECTIONS DATA */
 
 const serviceData = [
   {
@@ -162,5 +214,29 @@ const serviceData = [
     icon: "/svgs/checklist.svg",
     header: "checklist",
     quotes: "The ultimate wedding checklist to make sure everything gets done.",
+  },
+];
+
+const weddingsData = [
+  {
+    id: 1,
+    cardImage: "/images/wedding-pic1.png",
+    name: "Nicole & Michael",
+    location: "South Enugu, Nigeria",
+    date: "07/07/2020",
+  },
+  {
+    id: 2,
+    cardImage: "/images/wedding-pic1.png",
+    name: "Nicole & Michael",
+    location: "South Enugu, Nigeria",
+    date: "07/07/2020",
+  },
+  {
+    id: 3,
+    cardImage: "/images/wedding-pic1.png",
+    name: "Nicole & Michael",
+    location: "South Enugu, Nigeria",
+    date: "07/07/2020",
   },
 ];
