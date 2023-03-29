@@ -122,7 +122,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* REAL WEDDINGS */}
+        {/* REAL WEDDINGS SECTION */}
 
         <div className="real_weeding_sec">
           <div className="real_weeding_sec_inner py-20">
@@ -164,10 +164,50 @@ export default function Home() {
               ))}
             </div>
 
-            <div className="view_wedding_btn flex justify-center gap-4 place-items-center my-16 font-medium container_main">
+            <div className="view_wedding_btn flex justify-center gap-4 place-items-center my-16 font-normal hover:font-medium container_main">
               <div className="border-2 border-red-500 text-center text-white bg-red-500 w-80 px-6 py-4">
                 VIEW WEDDINGS{" "}
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* VENDORS SECTION */}
+        <div className="vendors_sec">
+          <div className="vendors_sec_inner pb-20 lg:flex">
+            <div className="vendors_left lg:w-5/6 light_bg container_main grid justify-center items-center lg:items-start lg:place-items-start place-items-center">
+              <h3 className="text-left py-4 lg:pb-12 special_font text text-3xl lg:text-5xl font-medium italic mt-8 lg:mt-16">
+                Wedding Vendors{" "}
+              </h3>
+
+              <p className="text_quotes font-light text-center lg:text-left text-xl max-w-md">
+                Millions of engaged couples turn to CrownPlan as their trusted
+                wedding resource, with the largest directory of local wedding
+                vendors.
+              </p>
+
+              <ul className="grid font-medium text-center lg:text-left text-sm lg:text-base grid-cols-2 gap-x-2 lg:gap-5 gap-y-5 max-w-lg mt-5 lg:mt-8">
+                <li>BEAUTY & HEALTH</li>
+                <li>CATERING</li>
+                <li>VIDEOGRAPHY</li>
+                <li>PHOTOGRAPHY</li>
+              </ul>
+
+              <div className="vendors_left_btn flex justify-start gap-4 place-items-start mt-7 pb-4 lg:pb-20 font-normal hover:font-medium">
+                <div className="border-2 border-red-500 text-center text-white bg-red-500 w-80 px-6 py-4">
+                  VIEW ALL VENDORS{" "}
+                </div>
+              </div>
+            </div>
+
+            <div className="vendors_right hidden border-2 w-full h-max lg:block">
+              <Image
+                src="/images/vendors-img.png"
+                width={500}
+                height={500}
+                alt="vendors-bg"
+                className="w-full vendor_img"
+              />
             </div>
           </div>
         </div>
