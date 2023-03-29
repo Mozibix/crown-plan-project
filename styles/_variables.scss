@@ -27,6 +27,29 @@
   }
 }
 
+.header {
+  &_sec {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+  &_text {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    color: $light_text;
+  }
+}
+
+.line {
+  width: 6.5rem;
+  border: 2px solid $light_text;
+}
+
 /* MEDIA QUERIES 
 
 
