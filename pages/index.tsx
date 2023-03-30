@@ -270,6 +270,64 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* CONTACT SECTION */}
+        <section className="contact">
+          <div className="contact_inner light_bg container_main text-center">
+            <h3 className="contact_header pt-10 sm:mb-4 sm:pt-28 special_font italic font-medium sm:leading-loose text-3xl tracking-wider lg:text-5xl">
+              Contact Us
+            </h3>
+            <p className="contact_middle_text light_text text-sm sm:text-base tracking-wider">
+              REACH OUT TO US
+            </p>
+
+            <div className="contact_form_card sm:mt-8 py-4 sm:py-20 sm:bg-white w-full sm:shadow-lg  sm:flex flex-col items-center">
+              <form>
+                <div className="max-w-lg sm:w-96">
+                  <div className="grid grid-cols-1 gap-2">
+                    <label className="block">
+                      <input
+                        type="email"
+                        className="outline-none mt-1 block w-full rounded-md container_form"
+                        placeholder="Your Name"
+                      />
+                    </label>
+
+                    <label className="block">
+                      <input
+                        type="email"
+                        className="outline-none mt-1 block w-full rounded-md container_form"
+                        placeholder="Your Email"
+                      />
+                    </label>
+
+                    <label className="block">
+                      <input
+                        type="email"
+                        className="outline-none mt-1 block w-full rounded-md container_form"
+                        placeholder="Subject"
+                      />
+                    </label>
+
+                    <label className="block">
+                      <textarea
+                        placeholder="Message"
+                        className="container_form outline-none mt-1 block w-full rounded-md h-40"
+                        rows={Number("3")}
+                      ></textarea>
+                    </label>
+
+                    <button className="flex justify-center sm:justify-start sm:w-64 gap-4 sm:place-items-start mt-3 font-normal hover:font-medium">
+                      <div className="border-2 border-red-500 text-center text-white bg-red-500 w-80 sm:px-6 py-3">
+                        SEND MESSAGE
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
       </div>
     </MainLayout>
   );
