@@ -193,7 +193,7 @@ export default function Home() {
                 <li>PHOTOGRAPHY</li>
               </ul>
 
-              <div className="vendors_left_btn flex justify-start gap-4 place-items-start mt-7 pb-4 lg:pb-20 font-normal hover:font-medium">
+              <div className="vendors_left_btn  flex justify-start gap-4 place-items-start mt-7 pb-4 lg:pb-20 font-normal hover:font-medium">
                 <div className="border-2 border-red-500 text-center text-white bg-red-500 w-80 px-6 py-4">
                   VIEW ALL VENDORS{" "}
                 </div>
@@ -211,6 +211,46 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* REVIEWS SECTION */}
+
+        <section className="reviews_sec pb-10 md:pb-16 lg:pt-10">
+          <div className="reviews_sec_inner container_main flex gap-3 flex-wrap justify-center lg:justify-evenly place-items-center text-center lg:text-left">
+            <div className="reviews_left grid justify-center">
+              <Image
+                src="/images/reviews-img.png"
+                width={500}
+                height={500}
+                alt="reviews"
+                className="w-full lg:w-96"
+              />
+            </div>
+
+            <div className="reviews_right">
+              <div className="reviews_header">
+                <h6 className="my-8 light_text font-normal">
+                  OVER 3 MILLION REVIEWS{" "}
+                </h6>
+
+                <div className="reviews_quotes font-medium lg:max-w-md lg:leading-10 max-w-prose">
+                  <p>
+                    &quot;Such a great community to be part of. The commitment
+                    and services you all provide to the community is just
+                    outstanding. &quot;
+                  </p>
+                </div>
+
+                <div className="reviews_right_bottom_text flex items-center place-items-center lg:justify-start justify-center mt-4 gap-3 font-semibold italic text-xs lg:text-lg ">
+                  <div className="border border-black w-4"></div>
+                  <span className="reviewer_name">Jimoh Lawal</span>
+                  <span className="reviewer_data light_text special_font italic">
+                    Wedding 6/8/19
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </MainLayout>
   );
