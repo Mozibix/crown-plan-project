@@ -4,7 +4,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="footer_inner container_main flex_between">
+      <div className="footer_inner container_main">
         <div className="footer_left_section flex_center">
           <div className="footer_logo special_font">
             Cro
