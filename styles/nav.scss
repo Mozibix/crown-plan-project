@@ -34,15 +34,7 @@ nav {
       }
 
       &_img {
-        position: absolute;
-        top: 0.2rem;
-        left: 2.47rem;
-        width: 2rem;
-        @media screen and (min-width: 992px) {
-          width: 2.8rem;
-          top: 0.9rem;
-          left: 4.3rem;
-        }
+        width: 100%;
       }
     }
   }
