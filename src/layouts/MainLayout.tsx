@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React, { Fragment } from "react";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Footer from "../(components)/Footer";
+import Header from "../(components)/Header";
 
 const MainLayout: React.FC<{ children: React.ReactElement }> = ({
   children,
