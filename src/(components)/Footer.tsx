@@ -6,14 +6,14 @@ const Footer = () => {
     <div className="footer">
       <div className="footer_inner container_main flex_between">
         <div className="footer_left_section flex_center">
-          <div className="footer_logo special_font flex_center">
-            Cro &nbsp;&nbsp;
+          <div className="footer_logo special_font">
+            Cro
             <span>
               <Image
                 src="/svgs/logo-icon.svg"
-                height={36}
+                height={100}
                 className="logo_img"
-                width={36}
+                width={100}
                 alt="logo"
               />
             </span>{" "}
