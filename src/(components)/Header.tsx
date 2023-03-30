@@ -1,7 +1,9 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const Header = () => {
+  const [open, SetOpen] = useState(false);
+
   return (
     <nav>
       <div className="nav_inner  container_main">
@@ -32,18 +34,19 @@ const Header = () => {
 
         <div className="harmburger">
           <Image
-            src="/svgs/burger.svg"
+            src={`${open ? "/svgs/burger_close.svg" : "/svgs/burger.svg"}`}
             width={20}
             height={20}
             alt="harmurger"
+            onClick={() => SetOpen(!open)}
           />
         </div>
       </div>
 
       {/* MOBILE-NAV */}
 
-      <div className="mobile_links">
-        <ul className="links">
+      <div className={`mobile_links ${open ? "open" : " "}`}>
+        <ul>
           <li>Home</li>
           <li>Portfolio</li>
           <li>Shop</li>
