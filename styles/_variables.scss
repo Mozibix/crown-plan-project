@@ -1,8 +1,14 @@
-.container_main {
-  padding: 0 1rem;
+.container {
+  &_main {
+    padding: 0 1rem;
 
-  @media screen and (min-width: 992px) {
-    padding: 0 5.5rem;
+    @media screen and (min-width: 992px) {
+      padding: 0 5.5rem;
+    }
+  }
+
+  &_form {
+    padding: 0.5rem 1rem;
   }
 }
 
