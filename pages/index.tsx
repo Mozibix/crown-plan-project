@@ -251,6 +251,25 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* WEDDING GALLERY SECTION */}
+
+        <section className="wedding_gala_sec">
+          <div className="wedding_gala_sec_inner grid justify-center text-center">
+            <div className="flex flex-col gap-4 justify-center place-items-center ">
+              <h3 className="wedding_gala_header text-sm lg:text-base">
+                WEDDING DRESS GALLERY
+              </h3>
+              <p className="wedding_gala_middle text-2xl lg:leading-loose lg:text-7xl">
+                Ready to walk down the aisle?
+              </p>
+
+              <p className="wedding_gala_bottom text-xs  lg:text-sm ">
+                DISCOVER THE LATEST TRENDS IN DRESSES
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </MainLayout>
   );
