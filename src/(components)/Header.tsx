@@ -6,13 +6,13 @@ const Header = () => {
     <nav>
       <div className="nav_inner  container_main">
         <div className="logo special_font">
-          Cro &nbsp;&nbsp;
+          Cro
           <span>
             <Image
               src="/svgs/logo-icon.svg"
-              height={55}
+              height={45}
               className="logo_img"
-              width={44}
+              width={45}
               alt="logo"
             />
           </span>{" "}
