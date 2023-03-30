@@ -4,6 +4,9 @@ module.exports = {
   content: [],
   theme: {
     extend: {},
+    screens: {
+      sm: { min: "578px" },
+    },
   },
   plugins: [],
 };
