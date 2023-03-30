@@ -219,7 +219,6 @@
 /* WEDDING GALLERY SECTION */
 .wedding_gala {
   &_sec {
-    padding: 6rem 0;
     color: $white;
     &_inner {
       background-image: url("/images/wedding-gala.png");
@@ -248,5 +247,22 @@
     font-weight: 600;
     line-height: 30px;
     letter-spacing: 0.06em;
+  }
+}
+
+/* CONTACT SECTION */
+
+.contact_inner {
+  padding-bottom: 2rem;
+  @media screen and (min-width: 640px) {
+    padding-bottom: 8rem;
+  }
+  .contact_form_card {
+    form {
+      input,
+      textarea {
+        border: 1px solid $light_text;
+      }
+    }
   }
 }
