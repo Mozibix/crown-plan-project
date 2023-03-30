@@ -80,7 +80,7 @@
       height: 35vh;
       @media screen and (min-width: 992px) {
         padding-top: 5rem;
-        height: 75vh;
+        height: 100%;
       }
     }
   }
@@ -97,7 +97,7 @@
       margin-top: 2rem;
       gap: 0.5rem;
       align-items: flex-start;
-      height: max-content;
+      height: 100%;
     }
   }
   &_left {
@@ -156,7 +156,6 @@
       font-weight: 300;
       letter-spacing: 0em;
       color: $footer_bg;
-      min-height: 50vh;
     }
 
     &_inner {
