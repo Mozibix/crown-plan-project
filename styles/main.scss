@@ -215,3 +215,38 @@
 .vendor_img {
   height: 38.5rem;
 }
+
+/* WEDDING GALLERY SECTION */
+.wedding_gala {
+  &_sec {
+    padding: 6rem 0;
+    color: $white;
+    &_inner {
+      background-image: url("/images/wedding-gala.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 40vh;
+      width: 100%;
+    }
+  }
+
+  &_header {
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.55em;
+  }
+
+  &_middle {
+    font-family: Cormorant Infant;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 85px;
+    letter-spacing: 0em;
+  }
+
+  &_bottom {
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+  }
+}
