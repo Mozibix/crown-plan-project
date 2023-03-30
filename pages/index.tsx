@@ -283,7 +283,7 @@ export default function Home() {
 
             <div className="contact_form_card sm:mt-8 py-4 sm:py-20 sm:bg-white w-full sm:shadow-lg  sm:flex flex-col items-center">
               <form>
-                <div className="max-w-lg sm:w-96">
+                <div className="max-w-lg sm:w-screen">
                   <div className="grid grid-cols-1 gap-2">
                     <label className="block">
                       <input
