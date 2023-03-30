@@ -142,8 +142,8 @@ export default function Home() {
                   <div className="card_image">
                     <Image
                       src={weddingsInfo.cardImage}
-                      width={100}
-                      height={100}
+                      width={500}
+                      height={500}
                       alt="weddings"
                       className="w-96"
                     />
