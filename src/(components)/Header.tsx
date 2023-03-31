@@ -8,23 +8,25 @@ const Header = () => {
   return (
     <nav>
       <div className="nav_inner  container_main">
-        <div className="logo special_font">
-          Cro
-          <span>
-            <Image
-              src="/svgs/logo-icon.svg"
-              height={45}
-              className="logo_img"
-              width={45}
-              alt="logo"
-            />
-          </span>{" "}
-          n <span className="red_text">Plan</span>
-        </div>
+        <Link href="/">
+          <div className="logo special_font">
+            Cro
+            <span>
+              <Image
+                src="/svgs/logo-icon.svg"
+                height={45}
+                className="logo_img"
+                width={45}
+                alt="logo"
+              />
+            </span>{" "}
+            n <span className="red_text">Plan</span>
+          </div>
+        </Link>
 
         <div className="desktop_links">
           <ul className="links">
-            <Link href="#!">
+            <Link href="/">
               <li>Home</li>
             </Link>
             <Link href="#about">
@@ -60,7 +62,7 @@ const Header = () => {
 
       <div className={`mobile_links ${open ? "open" : " "}`}>
         <ul>
-          <Link href="#!">
+          <Link href="/">
             <li>Home</li>
           </Link>
           <Link href="#about">
