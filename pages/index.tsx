@@ -25,7 +25,7 @@ export default function Home() {
 
         {/* ABOUT SECTION */}
 
-        <div className="about_sec">
+        <section id="about" className="about_sec">
           <div className="about_sec_inner container_main">
             <div className="header_sec">
               <h3 className="header_text">ABOUT US</h3>
@@ -70,11 +70,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* WEDDING PLANNING SECTION */}
 
-        <div className="wedding_planning_sec">
+        <section id="wedding_plan" className="wedding_planning_sec">
           <div className="wedding_planning_sec_inner my-10 lg:my-16">
             <div className="header_sec ml-5">
               <h3 className="header_text">WEDDING PLANNING</h3>
@@ -120,11 +120,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* REAL WEDDINGS SECTION */}
 
-        <div className="real_weeding_sec">
+        <section id="real_wedding" className="real_weeding_sec">
           <div className="real_weeding_sec_inner py-20">
             <h3 className="text-center special_font text text-3xl lg:text-5xl font-medium italic mt-8 lg:mt-16">
               Real Weddings{" "}
@@ -170,10 +170,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* VENDORS SECTION */}
-        <div className="vendors_sec">
+        <section id="vendors" className="vendors_sec">
           <div className="vendors_sec_inner pb-20 lg:flex">
             <div className="vendors_left lg:w-5/6 light_bg container_main grid justify-center items-center lg:items-start lg:place-items-start place-items-center">
               <h3 className="text-left py-4 lg:pb-12 special_font text text-3xl lg:text-5xl font-medium italic mt-8 lg:mt-16">
@@ -193,7 +193,7 @@ export default function Home() {
                 <li>PHOTOGRAPHY</li>
               </ul>
 
-              <div className="vendors_left_btn  flex justify-start gap-4 place-items-start mt-7 pb-4 lg:pb-20 font-normal hover:font-medium">
+              <div className="vendors_left_btn  flex justify-start gap-4 place-items-start my-7 pb-4 lg:pb-20 font-normal hover:font-medium">
                 <div className="border-2 border-red-500 text-center text-white bg-red-500 w-80 px-6 py-4">
                   VIEW ALL VENDORS{" "}
                 </div>
@@ -210,11 +210,11 @@ export default function Home() {
               />
             </div>
           </div>
-        </div>
+        </section>
 
         {/* REVIEWS SECTION */}
 
-        <section className="reviews_sec pb-10 md:pb-16 lg:pt-10">
+        <section id="reviews" className="reviews_sec pb-10 md:pb-16 lg:pt-10">
           <div className="reviews_sec_inner container_main flex gap-3 flex-wrap justify-center lg:justify-evenly place-items-center text-center lg:text-left">
             <div className="reviews_left grid justify-center">
               <Image
@@ -254,7 +254,7 @@ export default function Home() {
 
         {/* WEDDING GALLERY SECTION */}
 
-        <section className="wedding_gala_sec">
+        <section id="wedding_gallery" className="wedding_gala_sec">
           <div className="wedding_gala_sec_inner grid justify-center text-center">
             <div className="flex flex-col gap-4 justify-center place-items-center ">
               <h3 className="wedding_gala_header text-sm lg:text-base">
@@ -272,7 +272,7 @@ export default function Home() {
         </section>
 
         {/* CONTACT SECTION */}
-        <section className="contact">
+        <section id="contact" className="contact">
           <div className="contact_inner light_bg container_main text-center">
             <h3 className="contact_header pt-10 sm:mb-4 sm:pt-28 special_font italic font-medium sm:leading-loose text-3xl tracking-wider lg:text-5xl">
               Contact Us
