@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Header = () => {
@@ -23,12 +24,24 @@ const Header = () => {
 
         <div className="desktop_links">
           <ul className="links">
-            <li>Home</li>
-            <li>Portfolio</li>
-            <li>Shop</li>
-            <li>About Us</li>
-            <li>Blog</li>
-            <li>Contact</li>
+            <Link href="#!">
+              <li>Home</li>
+            </Link>
+            <Link href="#about">
+              <li>About Us</li>
+            </Link>
+            <Link href="#wedding_plan">
+              <li>Services</li>
+            </Link>
+            <Link href="#real_wedding">
+              <li>Our Works</li>
+            </Link>
+            <Link href="#reviews">
+              <li>Reviews</li>
+            </Link>
+            <Link href="#contact">
+              <li>Contact</li>
+            </Link>
           </ul>
         </div>
 
@@ -47,12 +60,24 @@ const Header = () => {
 
       <div className={`mobile_links ${open ? "open" : " "}`}>
         <ul>
-          <li>Home</li>
-          <li>Portfolio</li>
-          <li>Shop</li>
-          <li>About Us</li>
-          <li>Blog</li>
-          <li>Contact</li>
+          <Link href="#!">
+            <li>Home</li>
+          </Link>
+          <Link href="#about">
+            <li>About Us</li>
+          </Link>
+          <Link href="#wedding_plan">
+            <li>Services</li>
+          </Link>
+          <Link href="#real_wedding">
+            <li>Our Works</li>
+          </Link>
+          <Link href="#reviews">
+            <li>Reviews</li>
+          </Link>
+          <Link href="#contact">
+            <li>Contact</li>
+          </Link>
         </ul>
       </div>
     </nav>
