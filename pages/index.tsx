@@ -290,6 +290,7 @@ export default function Home() {
                         type="email"
                         className="outline-none mt-1 block w-full rounded-md container_form"
                         placeholder="Your Name"
+                        required
                       />
                     </label>
 
@@ -298,6 +299,7 @@ export default function Home() {
                         type="email"
                         className="outline-none mt-1 block w-full rounded-md container_form"
                         placeholder="Your Email"
+                        required
                       />
                     </label>
 
@@ -306,6 +308,7 @@ export default function Home() {
                         type="email"
                         className="outline-none mt-1 block w-full rounded-md container_form"
                         placeholder="Subject"
+                        required
                       />
                     </label>
 
@@ -314,6 +317,7 @@ export default function Home() {
                         placeholder="Message"
                         className="container_form outline-none mt-1 block w-full rounded-md h-40"
                         rows={Number("3")}
+                        required
                       ></textarea>
                     </label>
 
